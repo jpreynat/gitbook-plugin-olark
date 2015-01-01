@@ -1,48 +1,31 @@
-Google Analytics tracking for GitBook
+Olark plugin for GitBook
 ==============
 
 You can use install it via **NPM**:
 
 ```
-$ npm install gitbook-plugin-ga
+$ npm install gitbook-plugin-olark
 ```
 
-And use it for your book with in the book.json:
+And use it for your book in the book.json:
 
 ```
 {
-    "plugins": ["ga"]
+    "plugins": ["olark"]
 }
 ```
 
-You can set the Google Analytics tracking ID using the plugins configuration in the book.json:
+You can set the Olark Site ID ID using the plugins configuration in the book.json:
 
 ```
 {
-    "plugins": ["ga"],
+    "plugins": ["olark"],
     "pluginsConfig": {
-        "ga": {
-            "token": "UA-XXXX-Y"
+        "olark": {
+            "site_id": "XYXYXY"
         }
     }
 }
 ```
 
-You can customize the tracker object by passing additional configuration options. You can either pass in `auto`, `none` or an object:
 
-```
-{
-    "plugins": ["ga"],
-    "pluginsConfig": {
-        "ga": {
-            "token": "UA-XXXX-Y",
-            "configuration": {
-                "cookieName": "new_cookie_name",
-                "cookieDomain": "mynew.domain.com"
-            }
-        }
-    }
-}
-```
-
-For an overview of all available configuration parameters, please refer to the [analytics.js field reference](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#create).
