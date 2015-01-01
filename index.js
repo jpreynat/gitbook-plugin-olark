@@ -1,6 +1,5 @@
 var swig = require('swig');
 var _ = require('lodash');
-var marked = require('marked');
 var path = require('path');
 var classHtmlAttribute = /class=['"](.+)['"]/;
 var tpl = swig.compileFile(path.resolve(path.dirname(module.filename), 'olark.html'));
