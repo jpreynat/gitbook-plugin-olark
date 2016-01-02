@@ -48,7 +48,7 @@ function displayCode(_page) {
     var config = this.options.pluginsConfig.olark || {};
     
     if (!config.site_id) {
-     throw "Need to option 'site_id' for Google Analytics plugin";
+     throw "Need to option 'site_id' for Olark plugin";
     }
     
     if (!config.configuration) {
