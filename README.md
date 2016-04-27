@@ -15,7 +15,7 @@ And use it for your book in the book.json:
 }
 ```
 
-You can set the Olark Site ID ID using the plugins configuration in the book.json:
+You can set the Olark Site ID using the plugins configuration in the book.json:
 
 ```
 {
